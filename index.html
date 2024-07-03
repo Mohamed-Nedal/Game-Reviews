@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Reviews</title>
+
+    <!-- ================= Fonts ==================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Nerko+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ================= Css Files ================ -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style..css" />
+  </head>
+  <body>
+    <main id="mainGamesUi">
+      <!-- ================= Header ================== -->
+      <header>
+        <div class="container"></div>
+      </header>
+
+      <!-- ==================== Navbar ==================== -->
+      <section class="navbar-container">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg shadow-lg">
+            <a class="navbar-brand" href="#">
+              <img src="./images/logo-sm.png" alt="Logo" />
+              <h1>game reviews</h1>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="#"
+                    data-category="mmorpg"
+                    >mmorpg</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" data-category="shooter"
+                    >shooter</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" data-category="sailing"
+                    >sailing</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" data-category="permadeath"
+                    >permadeath</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" data-category="superhero"
+                    >superhero</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" data-category="pixel">pixel</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </section>
+
+      <!-- ================ Games List =============== -->
+      <section class="games-list">
+        <div class="container">
+          <div class="row justify-content-center" id="gamesListShowen">
+            <div class="spinner-border" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============= Show Details ==================== -->
+    <section class="show-game-details d-none" id="showDetailsUi">
+      <div class="container">
+        <div
+          class="modal-header d-flex align-items-center justify-content-between mb-3"
+        >
+          <h2 class="modal-title text-capitalize" id="showDetailsGameLabel">
+            details game
+          </h2>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <div class="row" id="showDetailsRow"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== JavaScript Files ================= -->
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script type="module" src="./js/script.js"></script>
+  </body>
+</html>
